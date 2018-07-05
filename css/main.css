@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+}
+.landing{
+    background-position: top;
+    width: 100%;
+    background-image: url("../Sherlock-Holmes-Wallpaper-On-Wallpaper-Hd-18-1275x768.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:100%
+}
+.button{
+    padding: 10px;
+    font-family: Algerian;
+    font-size: 20px;
+}
+.image{
+    padding: 15px;
+}
+
+.animation{
+    background-color: white;
+    height: 7px;
+    width: 3px;
+    animation-duration: 1s;
+    animation-name: anime;
+    animation-iteration-count:infinite ;
+    border-radius: 2px;
+    /*animation-timing-function: ease-in;*/
+}
+.text{
+    /*font-family: Algerian;*/
+    margin-top: 120px;
+    font-size: 50px;
+
+}
+.text1{
+    margin-top: 450px;
+    /*font-family: Algerian;*/
+}
+.stick{
+    height: 7px;
+    width: 70px;
+    border-radius: 5px;
+}
+.col.s6.abcd{
+    padding: 0px;
+    max-width: 100%;
+    /*margin-right: 30px;*/
+    padding: 0px;
+    /*margin-left: -50px;*/
+}
+.col.offset-s6.aaaa{
+    padding: 0px;
+    margin-top: -330px;
+
+}
+.font{
+    margin: 0px;
+    /*font-size: small;*/
+    font-family: monospace;
+}
+.col.offset-s6.adjust{
+    padding: 0px;
+    max-width: 100%;
+    /*margin-right: -10px;*/
+    /*margin-bottom: 20px;*/
+}
+.hiring{
+    margin-top: -350px;
+}
+.map{
+    max-width: 100%;
+    /*margin-top: -20px;*/
+}
+.map1{
+    margin-bottom:-500px;
+    font-size: 25px;
+    position: relative;
+}
+.speak{
+    margin-top: -10px;
+}
+.image23{
+    max-width: 100%;
+    border-radius:90px;
+}
+.size{
+    font-size: 80px;
+}
+.marginadjust{
+    margin-bottom: 0px;
+}
+
+@keyframes anime {
+    0% {
+        transform: scaleX(1) rotate(0deg);
+
+    }
+    50% {
+        transform: scaleX(3);
+
+    }
+    100% {
+
+        transform: scaleX(1) rotate(180deg);
+    }
+}

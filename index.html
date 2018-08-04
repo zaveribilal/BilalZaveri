@@ -9,58 +9,119 @@
     <link href="https://fonts.googleapis.com/css?family=Acme|Rammetto+One" rel="stylesheet">
     <!--Import materialize.css-->
     <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+    <script type="text/javascript" src="jquery%201.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $(".text-container").hide();
+            $(".animation_controller").show();
+        });
+        $(document).ready(function () {
+            $(".animation_controller").hide(10000);
+            $(".text-container").show(10000);
+        });
+
+
+    </script>
     <style>
-        .text-container{
+        .initial_animation {
+            background-color: red;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            position: relative;
+            animation-name: circle;
+            animation-duration: 1.5s;
+            margin-top: 250px;
+            animation-iteration-count: infinite;
+            transition: ease;
+        }
+
+        .loading {
+            color: white;
+            font-size: 12px;
+        }
+
+        .text-container {
             text-align: center;
             margin-top: 15%;
             line-height: 0.9;
         }
-        .cv{
+
+        .next {
+            text-align: right;
+        }
+
+        .cv {
             font-size: 30px;
             font-family: 'Gaegu', cursive;
             text-align: center;
         }
-        span{
+
+        span {
             font-size: 100px;
             font-family: 'Gaegu', cursive;
             background: url("3.jpg") repeat-x;
             -webkit-background-clip: text;
-            color: rgba(225,225,225,.1);
+            color: rgba(225, 225, 225, .1);
             animation: animate 15s linear infinite;
         }
-        @keyframes animate {
-            0%{
-                background-position: left 0px top 10px;
+
+        @keyframes circle {
+            25% {
+                /*left: -100px;*/
             }
-            40%{
-                background-position: left 800px top 10px;
+            50% {
+                left: 0px;
+                background-color: black;
+            }
+            75% {
+                left: 100px;
+                background-color: blue;
+            }
+            100% {
+                left: 0px;
+            }
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: left 0px top 0px;
+            }
+            40% {
+                background-position: left 800px top 0px;
             }
         }
     </style>
 </head>
 <body background="1.jpg">
 
- <div class="row text-container">
-        <div class="col l4 offset-l4 m12 flow-text">
-             <span> Bilal Zaveri </span>
+<center>
+    <div class="animation_controller">
+        <div class="initial_animation">
+        </div>
+        <div class="loading">
+            Loading...
+        </div>
+    </div>
+</center>
 
-         </div>
+
+<div class="row text-container">
+    <div class="col l4 offset-l4 m12 flow-text">
+        <span> Bilal Zaveri </span>
+
+    </div>
     <div class="col l12 m12 s12 cv">
         <a href="Resume_Bilal_Zaveri.pdf" download="Bilal_Zaveri_CV" target="_blank">Download My CV</a>
-
     </div>
-    </div>
-
-
-
-
-
+</div>
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

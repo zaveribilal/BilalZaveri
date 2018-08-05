@@ -35,10 +35,11 @@
             /*display: none;*/
             animation-name: circle;
             animation-duration: 1.5s;
-            margin-top: 250px;
+            /*margin-top: 250px;*/
             animation-iteration-count: infinite;
-            transition: ease;
-
+            transition-timing-function: ease-in;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .loading {
@@ -79,6 +80,7 @@
         }
         .animation_controller{
             /*display: none;*/
+            height: 100vh;
         }
         @keyframes circle {
             25% {
@@ -87,6 +89,7 @@
             50% {
                 left: 0px;
                 background-color: black;
+
             }
             75% {
                 left: 100px;
@@ -109,16 +112,18 @@
 </head>
 <body>
 
-    <div class="animation_controller">
-        <div class="initial_animation">
-        </div>
-        <div class="loading">
-            Loading...
+    <div class="row animation_controller center valign-wrapper">
+        <div class="col l4 offset-l4 s12 ">
+            <div class="initial_animation ">
+            </div>
+            <div class="loading">
+                Loading...
+            </div>
         </div>
     </div>
 
     <div class="div1">
-        <div class="text-container valign-wrapper">     
+        <div class="text-container valign-wrapper">
             <div class="row">
                 <div class="col l4 offset-l4 m12 flow-text">
                     <span> Bilal Zaveri </span>

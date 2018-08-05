@@ -17,17 +17,11 @@
 
     <script type="text/javascript" src="jquery%201.js"></script>
     <script type="text/javascript">
-        if(
-        $(window).on('load', function() {
-            $('.animation_controller').css("display", "none");
-            $('text-container').css("display", "block");
-        }));
-        else(
-                $(window).on('load', function() {
-                    $('.animation_controller').css("display", "block");
-                    $('text-container').css("display", "none");
+        if (
+                $(window).on('load', function () {
+                    $('.animation_controller').css("display", "none");
+                    $('.div1').css("display", "block");
                 }));
-
 
 
     </script>
@@ -38,24 +32,33 @@
             height: 10px;
             border-radius: 5px;
             position: relative;
+            /*display: none;*/
             animation-name: circle;
             animation-duration: 1.5s;
             margin-top: 250px;
             animation-iteration-count: infinite;
             transition: ease;
+
         }
 
         .loading {
             color: darkslategrey;
             font-size: 12px;
+            /*display: none;*/
         }
-        .text-container {
 
+        .text-container {
+            height: 100vh;
             text-align: center;
-            margin-top: 15%;
+            /*margin-top: 15%;*/
             line-height: 0.9;
         }
+        .div1{
+            background-image: url("1.jpg");
+            height: 100vh;
+            display: none;
 
+        }
         .next {
             text-align: right;
         }
@@ -74,7 +77,9 @@
             color: rgba(225, 225, 225, .1);
             animation: animate 15s linear infinite;
         }
-
+        .animation_controller{
+            /*display: none;*/
+        }
         @keyframes circle {
             25% {
                 /*left: -100px;*/
@@ -102,9 +107,8 @@
         }
     </style>
 </head>
-<body background="1.jpg">
+<body>
 
-<center>
     <div class="animation_controller">
         <div class="initial_animation">
         </div>
@@ -112,19 +116,19 @@
             Loading...
         </div>
     </div>
-</center>
 
-
-<div class="row text-container">
-    <div class="col l4 offset-l4 m12 flow-text">
-        <span> Bilal Zaveri </span>
-
+    <div class="div1">
+        <div class="text-container valign-wrapper">     
+            <div class="row">
+                <div class="col l4 offset-l4 m12 flow-text">
+                    <span> Bilal Zaveri </span>
+                </div>
+                <div class="col l12 m12 s12 cv">
+                    <a href="Resume_Bilal_Zaveri.pdf" download="Bilal_Zaveri_CV" target="_blank">Download My CV</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col l12 m12 s12 cv">
-        <a href="Resume_Bilal_Zaveri.pdf" download="Bilal_Zaveri_CV" target="_blank">Download My CV</a>
-    </div>
-</div>
-
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>

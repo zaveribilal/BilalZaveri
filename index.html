@@ -17,15 +17,17 @@
 
     <script type="text/javascript" src="jquery%201.js"></script>
     <script type="text/javascript">
+        if(
+        $(window).on('load', function() {
+            $('.animation_controller').css("display", "none");
+            $('text-container').css("display", "block");
+        }));
+        else(
+                $(window).on('load', function() {
+                    $('.animation_controller').css("display", "block");
+                    $('text-container').css("display", "none");
+                }));
 
-        $(document).ready(function () {
-            $(".text-container").hide();
-            $(".animation_controller").show();
-        });
-        $(document).ready(function () {
-            $(".animation_controller").hide(10000);
-            $(".text-container").show(10000);
-        });
 
 
     </script>
@@ -44,11 +46,12 @@
         }
 
         .loading {
-            color: white;
+            color: darkslategrey;
             font-size: 12px;
         }
 
         .text-container {
+            /*background-image: url("1.jpg");*/
             text-align: center;
             margin-top: 15%;
             line-height: 0.9;

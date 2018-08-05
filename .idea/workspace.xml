@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7e4f3a0-e164-4bb0-b6dc-fbe904e00019" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="c7e4f3a0-e164-4bb0-b6dc-fbe904e00019" name="Default" comment="" />
     <ignored path="BilalZaveri.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -202,12 +199,12 @@
       <workItem from="1533118136589" duration="2658000" />
       <workItem from="1533149327777" duration="1035000" />
       <workItem from="1533307782477" duration="7943000" />
-      <workItem from="1533463223664" duration="7686000" />
+      <workItem from="1533463223664" duration="7793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43872000" />
+    <option name="totallyTimeSpent" value="43979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
